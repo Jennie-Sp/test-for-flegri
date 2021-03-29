@@ -1,0 +1,205 @@
+@import "http://fonts.fontstorage.com/import/phenomena.css";
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    font-family: 'Phenomena';
+    font-size: 1rem;
+}
+
+
+
+/*HEADER START*/
+.header {
+    padding: 0 10%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 8px 15px -4px #dad7d7;
+    position: relative;
+    z-index: 10;
+}
+.logo-header {
+    width: 20%;
+}
+.menu-header {
+    padding: 0;
+    font-weight: 600;
+}
+.menu-header > li {
+    text-transform: uppercase;
+    display: inline;
+    padding: 0 20px;
+}
+.menu-header > li > a {
+    color: #000;
+}
+.search {
+    width: 20%;
+    height: 25%;
+    background-image: url("images/magnifier_icon-icons.com_48267.png");
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid #000000;
+}
+.search:focus {
+    background: transparent;
+}
+
+
+/*MAIN START*/
+
+/*BANNER*/
+#banner {
+    position: relative;
+}
+.banner-heading {
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 15%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    width: 20%;
+}
+.banner-text {
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 15%;
+    width: 20%;
+}
+.banner-link {
+    position: absolute;
+    text-transform: uppercase;
+    margin-top: -2%;
+    margin-left: 91%;
+    color: #000000;
+    font-weight: 600;
+}
+#banner > .owl-dots {
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 15%;
+}
+#banner > .owl-dots > .owl-dot {
+    outline-width: 0;
+    margin: 0 5px;
+}
+#banner > .owl-dots > .owl-dot.active {
+    border: 1px solid #000000;
+    border-radius: 100%;
+}
+#banner > .owl-dots > .owl-dot > span,
+#banner > .owl-dots > .owl-dot > span.active {
+    background-color: #000000;
+    width: 4px;
+    height: 4px;
+    border: 1px solid #000000;
+    margin: 5px 5px;
+}
+/*products*/
+.products {
+    margin: 5% 10%;
+}
+.products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 40px;
+    font-family: 'Phenomena';
+    font-size: 18px;
+}
+.products-heading-new {
+    font-weight: 500;
+}
+.products-heading > a {
+    color: #4fa58a;
+    text-decoration: underline;
+}
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.product-card {
+    position: relative;
+    width: 260px;
+    height: auto;
+    border: 2px solid #f3f3f3;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 8px 8px #f3f3f3;
+    margin-bottom: 15px;
+}
+.product-card-img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 6px 6px 0px 0px;
+}
+.product-card-img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card-info {
+    padding: 0 10px;
+}
+.product-card-heading {
+    font-weight: 500;
+    margin-right: 65px;
+    font-size: 14px;
+}
+.product-card-price {
+    text-align: end;
+    font-size: 18px;
+    color: #b16f71;
+    margin-top: -25px;
+}
+/*ICON*/
+.product-card-icon-like {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+.product-card-icon-buy {
+    position: absolute;
+    top: 71%;
+    left: 74%;
+}
+.product-card-icon-like-passive {
+    display: block;
+}
+.product-card-icon-like-active {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .banner-heading {
+        font-size: 1rem;
+    }
+    .banner-text {
+        font-size: 0.7rem;
+    }
+    .banner-link {
+        font-size: 0.7rem;
+    }
+    .product-cards {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
